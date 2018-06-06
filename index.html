@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rosebert Caterers</title>
     <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
@@ -73,18 +74,26 @@ and Barbecues.Within, there is a wealth of information to help you plan your fes
     </div>
 </div>
 </section>
-<div class="container-fluid">
+<div class="container-fluid ">
     <div class="last row">
-        <p style="font-weight: bold;">Subscribe to our newsletter for updates on services and prices</p>
+        <p style="font-weight: bold;">Subscribe to our newsletter for updates on services and price quotation</p>
     <div style="margin-left: 35%; margin-right: 35%;width: 30%;">
-        <form>
-            <input type="email" placeholder="Your Email" name="email" class="required email" id="email">
+        <form class="cd-form">
+            <input type="email" placeholder="Your Email" name="email" class="required-email" id="email">
             <input type="submit" value="Subscribe" id="subscribe" class="button">
+            <div class="cd-loading"></div>
         </form>    
     </div>
-    </div>   
+    </div>
+    <div data-type="message" class="cd-response cd-response-error">Bummer!!!You have entered an incorrect email</div>
+   <div data-type="message" class="cd-response-success"><p>Great!You have been successfully registered. Check email for confirmation notification.</p></div>
+   <div data-type="message" class="cd-response cd-response-notification">Please enter a valid email address</div>   
 </div>
 <footer class="text-center"><p class="copyright"> &copy;2018 Rosebert Caterers</p></footer>	
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 <script src="./JS/scripts.js"></script>
 </body>
 </html>

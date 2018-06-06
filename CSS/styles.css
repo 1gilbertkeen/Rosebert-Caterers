@@ -5,6 +5,7 @@
 }
 
 body{
+    font-family: 'Josefin Sans', sans-serif;
 	font-size:16px;
 	line-height:1.7;
 	color:#777;
@@ -23,14 +24,14 @@ header {
 .project-name {
     margin-top: 0;
     margin-bottom: 0.1rem;
-    font-family: 'Montez', cursive;
+    font-family: 'Montez', sans-serif;
 }
 
 .project-tagline {
     margin-bottom: 2rem;
     font-weight: normal;
     opacity: 0.9;
-    font-family: 'Montez', cursive;
+    font-family: 'Montez',sans-serif;
 }
 
 a {
@@ -79,7 +80,7 @@ hr {
     overflow: hidden;
 }
 body p {
-    font-family: "Josefin Sans";
+    font-family:'Josefin Sans', sans-serif;
     font-size: 22px;
     line-height: 1.75em;
     display: block;
@@ -161,5 +162,54 @@ footer {
     top: -8px;
     font-size: .75em;
   }
+
+  .cd-form {
+    position: relative;
+  }
+  
+  .cd-form .cd-loading {
+    /* loading bar */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3%;
+    width: 100%;
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    visibility: hidden;
+    transition: transform 3s;
+}
+  
+  .cd-form.is-submitted .cd-loading {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+  .required-email {
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    transition: bottom 0.3s, background-color 0.3s;
+    z-index: 1;
+}
+
+is-active .required-email {
+    bottom: 50%;
+  }
+  
+  #subscribe {
+    top: 50%;
+    /* hidden by default */
+    display: none;
+    transition: background-color 0.2s;
+    z-index: 2;
+  }
+  
+  .is-active #subscribe {
+    display: block;
+    animation: cd-bounce-in ease-out 0.4s;
+  }
+  
   
   
