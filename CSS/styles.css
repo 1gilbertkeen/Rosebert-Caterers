@@ -1,25 +1,165 @@
-.row {
-    display: flex;
 
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+	font-size:16px;
+	line-height:1.7;
+	color:#777;
+	font-weight:400;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0; 
+}
+header {
+        color: #fff;
+        text-align: center;
+        background-color: #DD2476;
+        background-image: linear-gradient(120deg, #FF512F, #DD2476);
+}
+
+.project-name {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    font-family: 'Montez', cursive;
+}
+
+.project-tagline {
+    margin-bottom: 2rem;
+    font-weight: normal;
+    opacity: 0.9;
+    font-family: 'Montez', cursive;
+}
+
+a {
+    color: #1e6bb8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.text-center {
+    text-align: center;
+}
+.img-block {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display:flex;
   }
   
 .column {
-    flex: 30%;
+    flex: 20%;
     padding: 5px;
   }
 
-h2, h3 {
-    font-family: 'Raleway', sans-serif;
+.floating {
+    float: left;
+}
+hr {
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    overflow: hidden;
+}
+body p {
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    line-height: 1.75em;
+    display: block;
+}
+.left {
+    float:right;
+}
+.rounded {
+    border-radius: 5px;
+}
+.fruits {
+    max-width: 100%;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.workprocess .icon {
+    position: relative;
+}
+
+.workprocess .block {
     text-align: center;
 }
-p{
-    margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
+
 }
-.img{
-    position: relative;
-    width:  100%;
-    height: 100%;
+.workprocess h3 {
+    margin: 40px 0;
+    font-size: 35px;
+    align-self: center;
+    text-transform: uppercase;
 }
+.workprocess h4 {
+    text-transform: uppercase;
+}
+h4 {
+    text-transform: uppercase;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.last {
+    background-image: url(../Images/slider.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10%;
+    font-size: 1.5em;
+    color: white;
+ }
+
+ input {
+    background-color: whitesmoke;
+    border: 1px solid white;
+}
+
+.last #subscribe {
+    padding: 5px;
+    background-color: blueviolet;
+    border:none;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.last p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    width: 100%;
+    min-height: 30px;
+    padding: 20px 0 40px 20px;
+  }
+  
+  footer .copyright {
+    top: -8px;
+    font-size: .75em;
+  }
+  
+  
