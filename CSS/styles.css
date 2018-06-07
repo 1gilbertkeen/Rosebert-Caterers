@@ -104,7 +104,6 @@ body p {
     text-align: center;
 }
 
-}
 .workprocess h3 {
     margin: 40px 0;
     font-size: 35px;
@@ -116,6 +115,10 @@ body p {
 }
 h4 {
     text-transform: uppercase;
+}
+
+.fa-calendar:before {
+    content: "\f073";
 }
 .container {
     padding-right: 15px;
