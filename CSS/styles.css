@@ -214,5 +214,18 @@ is-active .required-email {
     animation: cd-bounce-in ease-out 0.4s;
   }
   
+  @keyframes cd-bounce-in {
+    0% {
+      top: 100%;
+    }
+  
+    60% {
+      top: 45%;
+    }
+  
+    100% {
+      top: 50%;
+    }
+  }
   
   
